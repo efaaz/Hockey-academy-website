@@ -4,6 +4,14 @@
     <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+      .font-manrope{
+        font-family: "Manrope";
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,6 +20,9 @@
               colors: {
                 clifford: '#da373d',
                 orangebg: '#FF4240',
+                dashedBorder: 'rgba(19, 19, 24, 0.20);',
+                textPara: 'rgba(19, 19, 24, 0.60)',
+                cardbg: 'rgba(19, 19, 24, 0.50)',
               }
             }
           }
@@ -19,7 +30,7 @@
       </script>
     <title>Hockey's</title>
 </head>
-<body>
+<body class="font-manrope">
     <header class="container mx-auto">
       <nav>
         <div class="navbar justify-between bg-base-100">
@@ -36,7 +47,7 @@
                   <li><a>Contact</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost lg:text-4xl text-2xl font-extrabold">Hockey<span class="text-orangebg">'</span>s</a>
+              <a class="lg:text-4xl text-2xl font-extrabold">Hockey<span class="text-orangebg">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex lg:justify-between">
               <ul class="menu menu-horizontal px-1 text-base">
@@ -59,39 +70,77 @@
           </div>
     </nav>
     <!-- Slider -->
-    <div class="carousel w-full py-8">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img src="/images/1.png" class="w-full" />
+    <div class="carousel lg:w-full w-[22rem] lg:h-[37rem]  py-8">
+      <div id="slide1" class="carousel-item relative w-full ">
+        <img src="/images/1.png" class="w-full container mx-auto" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle">❮</a> 
-          <a href="#slide2" class="btn btn-circle">❯</a>
+          <a href="#slide4" class="btn btn-circle"></a> 
+          <a href="#slide2" class="btn btn-circle"></a>
         </div>
       </div> 
       <div id="slide2" class="carousel-item relative w-full">
         <img src="/images/2.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle">❮</a> 
-          <a href="#slide3" class="btn btn-circle">❯</a>
+          <a href="#slide1" class="btn btn-circle"></a> 
+          <a href="#slide3" class="btn btn-circle"></a>
         </div>
       </div> 
       <div id="slide3" class="carousel-item relative w-full">
         <img src="/images/3.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle">❮</a> 
-          <a href="#slide4" class="btn btn-circle">❯</a>
+          <a href="#slide2" class="btn btn-circle"></a> 
+          <a href="#slide4" class="btn btn-circle"></a>
         </div>
       </div> 
       <div id="slide4" class="carousel-item relative w-full">
         <img src="/images/4.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle">❮</a> 
-          <a href="#slide1" class="btn btn-circle">❯</a>
+          <a href="#slide3" class="btn btn-circle"></a> 
+          <a href="#slide1" class="btn btn-circle"></a>
         </div>
       </div>
     </div>
     </header>
     <main class="container mx-auto">
-
+      <div class="text-center border-dashed border-y border-dashedBorder my-6">
+      <h1 class="text-4xl font-bold text-[#131318] py-6">Program Sections</h1>
+      <p class="text-textPara font-medium text-base pb-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+      </div>
+      <!-- Card section -->
+      <div class="lg:flex justify-center gap-4">
+        <div class="card lg:w-[50%] w-[22rem] image-full h-64 lg:h-80 mb-12 container mx-auto ">
+          <figure><img src="/Images/2.png" alt="Shoes" class="w-full" /></figure>
+          <div class="card-body">
+            <h2 class="card-title lg:pt-24">Junior Program</h2>
+            <p class="pb-4 text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elitenim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <div class="card-actions justify-start">
+              <button class="btn text-slate-50 bg-orangebg border-0">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:w-[50%] w-[22rem] image-full h-64 mb-3 container mx-auto lg:h-80">
+          <figure><img src="/Images/3.png" alt="Shoes" class="w-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title lg:pt-24">Teenager Program</h2>
+            <p class="pb-4 text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elitenim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <div class="card-actions justify-start">
+              <button class="btn text-slate-50 bg-orangebg border-0">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="card lg:w-[100%] w-[22rem] image-full h-64 lg:h-96 mb-12 container mx-auto ">
+          <figure><img src="/Images/4.png" alt="Shoes" class="w-full" /></figure>
+          <div class="card-body">
+            <h2 class="card-title lg:pt-32">Professional Program</h2>
+            <p class="pb-4 text-sm">Dolor sit amet consectetur.<br>
+              Ut urna diam quis sagittis.Elit elitenim sagittis turpis in <br> magna. Id et sed euismod natoque amet nunc morbi nulla. <br>Tortor congue sed et in.</p>
+            <div class="card-actions justify-start">
+              <button class="btn text-slate-50 bg-orangebg border-0">Register Now!</button>
+            </div>
+          </div>
+        </div>
     </main>
     <footer>
 
