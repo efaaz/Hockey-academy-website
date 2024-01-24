@@ -23,6 +23,10 @@
                 dashedBorder: 'rgba(19, 19, 24, 0.15);',
                 textPara: 'rgba(19, 19, 24, 0.60)',
                 cardbg: 'rgba(19, 19, 24, 0.50)',
+                callbg: 'rgba(188, 237, 109, 0.10)',
+                msgbg: 'rgba(253, 221, 95, 0.10)',
+                mapbg: 'rgba(98, 156, 243, 0.10)',
+                inputbg:'rgba(19, 19, 24, 0.03)',
                 socialbg: 'rgba(19, 19, 24, 0.03)',
                 footerbg: '#131318',
                 footerpara: 'rgba(255, 255, 255, 0.60)',
@@ -430,7 +434,7 @@
           <h1 class="lg:text-4xl text-2xl font-bold text-[#131318] pt-4">Clients Question</h1>
           <p class="text-textPara font-medium lg:text-base text-sm pt-4 pb-6 px-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
           </div>
-        <div class="lg:flex gap-8 border border-dashedBorder p-6 mb-4 rounded-2xl">
+        <div class="lg:flex gap-8 border border-dashedBorder lg:p-6 p-4 mb-4 rounded-2xl">
           <div class="lg:w-[47%] pb-4">
             <img src="Images/11.png"  alt="">
           </div>
@@ -495,7 +499,73 @@
         <div class="text-center border-dashed border-y border-dashedBorder my-6 mb-10 mt-20">
           <h1 class="lg:text-4xl text-2xl font-bold text-[#131318] pt-4">Get In Touch</h1>
           <p class="text-textPara font-medium lg:text-base text-sm pt-4 pb-6 px-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+        </div>
+        <section class="lg:flex lg:gap-6">
+          <div class="border border-dashedBorder rounded-xl my-6 mb-10 lg:p-12 p-4">
+            <div class="bg-callbg p-8">
+              <img src="Images/Group 1171275317.png" class="lg:w-[12%]" alt="">
+              <p class="text-textPara font-medium lg:text-base text-sm pt-6">Phone Number : </p>
+               <p class="text-[#131318] lg:text-xl text-sm font-extrabold">(+62) 123-321-543</p>
+            </div>
+            <div class="bg-msgbg p-8 mt-6">
+              <img src="Images/Group 1171275318.png" class="lg:w-[12%]" alt="">
+              <p class="text-textPara font-medium lg:text-base text-sm pt-6">Email : </p>
+               <p class="text-[#131318] lg:text-xl text-sm font-extrabold">hockeys@support.com</p>
+            </div>
+            <div class="bg-mapbg p-8 mt-6">
+              <img src="Images/Group 1171275321.png" class="lg:w-[12%]" alt="">
+              <p class="text-textPara font-medium lg:text-base text-sm pt-6">Location : </p>
+               <p class="text-[#131318] lg:text-xl text-sm font-extrabold">152/1 Mohakhali Wireless Gate</p>
+            </div>
           </div>
+          <div class="p-2">
+            <div class="mt-4 lg:flex lg:gap-6">
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text font-semibold text-xl">Your name</span>
+                </div>
+                <input type="text" placeholder="Enter your full name" class="input  lg:w-[210%] max-w-xs bg-inputbg" />
+              </label>
+              <div class="">
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text font-semibold text-xl">Your Email</span>
+                  </div>
+                  <input type="text" placeholder="Enter your email" class="input  lg:w-[210%] max-w-xs bg-inputbg" />
+                </label>
+              </div>
+            </div>
+            <div class="mt-4 lg:flex lg:gap-6">
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text font-semibold text-xl">Subject</span>
+                </div>
+                <input type="text" placeholder="Enter your full subject" class="input  lg:w-[210%] max-w-xs bg-inputbg" />
+              </label>
+              <div class="">
+                <label class="form-control w-full max-w-xs">
+                  <div class="label">
+                    <span class="label-text font-semibold text-xl">Phone Number</span>
+                  </div>
+                  <input type="text" placeholder="Enter your phone number" class="input  lg:w-[210%] max-w-xs bg-inputbg text-sm font-normal" />
+                </label>
+              </div>
+            </div>
+            <div class="mt-4 lg:flex lg:gap-6">
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text font-semibold text-xl">Message</span>
+                </div>
+                <textarea placeholder="Write your message" class="textarea textarea-lg lg:w-[210%] lg:h-[21rem] bg-inputbg"></textarea>
+              </label>
+            </div>
+            <div class="pt-8">
+            <button class="btn btn-sm lg:btn-md lg:w-[41rem] w-[18rem] text-sm bg-[#FF4240] text-white ">Send Message</button>
+          </div>
+          </div>
+          
+        </section>
+
           <!-- Social section -->
           <div class="bg-socialbg text-center my-10">
             <h1 class="text-2xl font-bold text-[#131318] pt-8">Social Media</h1>
